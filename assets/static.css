@@ -1,0 +1,2 @@
+/* Keep content visible when JavaScript is unavailable. */
+.reveal { opacity: 1; transform: none; }
