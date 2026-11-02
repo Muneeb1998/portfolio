@@ -187,3 +187,7 @@ html[lang="de"] .deck-card>strong{overflow-wrap:anywhere}
 .origin-copy .marker:before{display:none}
 .origin-copy.reading-animated .marker{background-size:calc(var(--stroke-progress,0)*100%) 38%;transition:background-size .16s linear}
 @media(prefers-reduced-motion:reduce){.origin-copy.reading-animated .marker{background-size:100% 38%}}
+/* QA: long translated headings must wrap inside mobile project dialogs. */
+.project-dialog .story-hero h2,.project-dialog .story-body h3{overflow-wrap:anywhere;hyphens:auto;max-width:100%}
+.project-dialog .story-tags{min-width:0}
+@media(max-width:700px){.project-dialog .story-hero h2{font-size:clamp(28px,8.5vw,37px)}}
